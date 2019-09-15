@@ -15,6 +15,7 @@
   "homepage": "https://github.com/link2malkeet/react-tooling#readme",
   "scripts": {
     "build": "webpack",
+    "build:dev": "webpack --watch --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,8 +25,10 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.8",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
