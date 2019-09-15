@@ -15,7 +15,7 @@
   "homepage": "https://github.com/link2malkeet/react-tooling#readme",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "build:dev": "webpack --watch --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -28,6 +28,7 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
