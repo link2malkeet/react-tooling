@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import './style.css';
 
 class App extends React.Component {
@@ -8,7 +9,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hello React Tooling - {this.state.count}</h1>
+                <h1 className={this.state.count > 10 ? 'warning' : null}>Hello React Tooling - {this.state.count}</h1>
                 <button onClick={() => this.setState({ count: ++this.state.count })}>+</button>
                 <button onClick={() => this.setState({ count: --this.state.count })}>-</button>
             </div>
@@ -16,4 +17,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default hot(module)(App);
