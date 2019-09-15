@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/link2malkeet/react-tooling#readme",
   "scripts": {
-    "build": "webpack",
-    "build:dev": "webpack --watch --mode development",
+    "build": "webpack --config webpack.config.prod.js",
+    "build:dev": "webpack --watch --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
